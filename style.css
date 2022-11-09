@@ -1,0 +1,19 @@
+.navcolor {
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #076DF2, #034AA6, #021F59);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.navbar-brand img {
+    width: 100px;
+}
+.iBuscar {
+    border-radius: 25px 0 0 25px;
+    
+}
+.botonB {
+    border-radius: 0 25px 25px 0;
+}
+.boton {
+    border-radius: 25px;
+}
