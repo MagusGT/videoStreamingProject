@@ -1,5 +1,10 @@
 
-
+body {
+    background-image: url("./img/body-img.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+}
 .navcolor {
     background: #0F2027;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #076DF2, #034AA6, #021F59);  /* Chrome 10-25, Safari 5.1-6 */
@@ -18,4 +23,7 @@ background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10
 }
 .boton {
     border-radius: 25px;
+}
+.carrusel {
+    margin: 60px auto;
 }
