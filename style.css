@@ -1,14 +1,18 @@
 
 body {
     background-image: url("./img/body-img.jpg");
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: 100%;
+    /* background-repeat: no-repeat; */
     background-position: center;
+    
+    
 }
 .navcolor {
-    background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #076DF2, #034AA6, #021F59);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0F2027;  /* fllback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #076DF2, #034AA6, #021F59);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
 .navbar-brand img {
@@ -25,5 +29,18 @@ background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10
     border-radius: 25px;
 }
 .carrusel {
-    margin: 60px auto;
+    margin: 0 auto;
+}
+
+
+@media  (max-width: 768px) {
+    body {
+        background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        /* background-attachment: fixed; */
+        background-size: 100%;
+        /* background-repeat: no-repeat; */
+        background-position: center;
+        
+        
+    }
 }
