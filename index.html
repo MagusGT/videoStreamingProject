@@ -19,160 +19,176 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark navcolor">
+    <div class="col-sm-12 contenedor">
+      <nav class="navbar navbar-expand-md navbar-dark navcolor">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <!-- <i class="bi bi-film"></i> -->
+            <img src="./img/logo-pagina-video1.png" alt="" />
+            <span class="text-warning">Cinema</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto">
+              <li class="navbar-item">
+                <a class="nav-link active" href="#">Inicio</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" href="#">Estrenos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Acción</a></li>
+                  <li><a class="dropdown-item" href="#">Aventura</a></li>
+                  <li><a class="dropdown-item" href="#">Comedia</a></li>
+                  <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
+                  <li><a class="dropdown-item" href="#">Drama</a></li>
+                  <li><a class="dropdown-item" href="#">Familia</a></li>
+                  <li><a class="dropdown-item" href="#">Misterio</a></li>
+                </ul>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" href="#">Acerca de</a>
+              </li>
+            </ul>
+            <hr class="text-white" />
+            <form
+              class="col-xl-3 col-sm-6 d-flex justify-content-lg-center"
+              role="search"
+            >
+              <input
+                class="form-control iBuscar"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-light botonB" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <hr class="text-white" />
+            <form
+              class="d-flex justify-content-end justify-content-sm-start ms-lg-2"
+            >
+              <button class="btn btn-light me-2 boton" type="button">
+                Login
+              </button>
+              <button class="btn btn-outline-warning boton" type="button">
+                Suscribirse
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
       <div class="container-fluid">
-        <a href="#" class="navbar-brand">
-          <!-- <i class="bi bi-film"></i> -->
-          <img src="./img/logo-pagina-video1.png" alt="" />
-          <span class="text-warning">Cinema</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#menu"
-          aria-controls="menu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        <div
+          id="mi-carousel"
+          class="col-sm-12 col-md-9 col-lg-6 carousel slide carrusel"
+          data-bs-ride="carousel"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav me-auto">
-            <li class="navbar-item">
-              <a class="nav-link active" href="#">Inicio</a>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link" href="#">Estrenos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Categorías
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Acción</a></li>
-                <li><a class="dropdown-item" href="#">Aventura</a></li>
-                <li><a class="dropdown-item" href="#">Comedia</a></li>
-                <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
-                <li><a class="dropdown-item" href="#">Drama</a></li>
-                <li><a class="dropdown-item" href="#">Familia</a></li>
-                <li><a class="dropdown-item" href="#">Misterio</a></li>
-              </ul>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link" href="#">Acerca de</a>
-            </li>
-          </ul>
-          <hr class="text-white" />
-          <form
-            class="col-xl-3 col-sm-6 d-flex justify-content-lg-center"
-            role="search"
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#mi-carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mi-carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mi-carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active imagen">
+              <img
+                src="./img/edit1.jpg"
+                class="d-block w-100 m-auto"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Suscríbete y obtén un descento del 80% el primer mes</h5>
+                <p>No importa la cantidad de dispositivos conectados</p>
+              </div>
+            </div>
+            <div class="carousel-item imagen">
+              <img
+                src="./img/edit2.jpg"
+                class="d-block w-100 m-auto"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Terror - Crimen - Suspenso - Thriller</h5>
+                <p>Puedes elegir la edad para visualizar el contenido</p>
+              </div>
+            </div>
+            <div class="carousel-item imagen">
+              <img
+                src="./img/estrenos-3.jpg"
+                class="d-block w-100 m-auto"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Encontrá los mejores contenidos</h5>
+                <p>
+                  Todas las series y peliculas estrenos losp uedes ver a través
+                  de 5mentario
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#mi-carousel"
+            data-bs-slide="prev"
           >
-            <input
-              class="form-control iBuscar"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Buscar"
-            />
-            <button class="btn btn-outline-light botonB" type="submit">
-              <i class="bi bi-search"></i>
-            </button>
-          </form>
-          <hr class="text-white" />
-          <form
-            class="d-flex justify-content-end justify-content-sm-start ms-lg-2"
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#mi-carousel"
+            data-bs-slide="next"
           >
-            <button class="btn btn-light me-2 boton" type="button">
-              Login
-            </button>
-            <button class="btn btn-outline-warning boton" type="button">
-              Suscribirse
-            </button>
-          </form>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
       </div>
-    </nav>
-    <div
-      id="mi-carousel"
-      class="col-sm-12 col-md-9 col-lg-6 carousel slide carousel-dark carrusel"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#mi-carousel"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#mi-carousel"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#mi-carousel"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active imagen">
-          <img src="./img/est1.png" class="d-block w-100 m-auto" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Suscríbete y obtén un descento del 80% el primer mes</h5>
-            <p>No importa la cantidad de dispositivos conectados</p>
-          </div>
-        </div>
-        <div class="carousel-item imagen">
-          <img src="./img/est2.png" class="d-block w-100 m-auto" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Terror - Crimen - Suspenso - Thriller</h5>
-            <p>Puedes elegir la edad para visualizar el contenido</p>
-          </div>
-        </div>
-        <div class="carousel-item imagen">
-          <img src="./img/est3.png" class="d-block w-100 m-auto" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Encontrá los mejores contenidos</h5>
-            <p>
-              Todas las series y peliculas estrenos losp uedes ver a través de
-              5mentario
-            </p>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#mi-carousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#mi-carousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
     </div>
     <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
   </body>
