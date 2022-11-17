@@ -1,21 +1,21 @@
-
 body {
-    background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* background-attachment: fixed; */
+    background: #034AA6;
 }
 .contenedor {
-    background-image: url(./img/body-img.jpg);
+    background-image: url(./img/body-img2.png);
     background-repeat: no-repeat;
-    background-size: 100vw;
-    background-position: center;
+    background-size: 100%;
+    background-position: center center;
     height: 100vh;
+    
 }
 .navcolor {
+    font-family: 'Oswald';
     background: #0F2027;  /* fllback for old browsers */
     background: -webkit-linear-gradient(to bottom, #076DF2, #034AA6, #021F59);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    /* position: fixed; */
+    z-index: 2;
 }
 .navbar-brand img {
     width: 100px;
@@ -30,13 +30,17 @@ body {
 .boton {
     border-radius: 25px;
 }
-.carrusel {
-    margin: 7vh auto;
-    box-shadow: 0 1px 5px rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-}
-img {
-    border-radius: 5px;
+/* .contenedor-carousel {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 100%; 
+    margin: 7% auto;
+    
+} */
+.carousel-inner {
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(255,255,255,.8);
 }
 .carousel-caption {
     background: rgba(0,0,0,0.5);
@@ -44,3 +48,30 @@ img {
     backdrop-filter: blur(10px);
     color: #fff;
 }
+.seccion-planes {
+    margin: 7% auto 10%;
+    width: 100vw;
+    height: 100vh;
+}
+.title2 {
+    font-size: 3rem;
+    font-family: 'Rye';
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+}
+/*   */
+.card-index {
+    background: none;
+    /* box-shadow: 1px 5px 20px 5px rgba(0,0,0,.1); */
+    text-align: center;
+    align-items: center;
+    margin: 2rem auto;
+    
+}
+.imangen-card {
+    width: 50%;
+    padding: 1rem 0 1rem 0;
+}
+.card-title {
+    font-size: 2rem;
+}
+
