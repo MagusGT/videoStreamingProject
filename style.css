@@ -1,14 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background: #034AA6;
 }
 .contenedor {
     background-image: url(./img/body-img2.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center center;
     height: 100vh;
     
 }
+/* Barra de navegación */
 .navcolor {
     font-family: 'Oswald';
     background: #0F2027;  /* fllback for old browsers */
@@ -30,14 +36,10 @@ body {
 .boton {
     border-radius: 25px;
 }
-/* .contenedor-carousel {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    height: 100%; 
-    margin: 7% auto;
-    
-} */
+
+
+/* ----Seccion carousel------ */
+
 .carousel-inner {
     border-radius: 4px;
     box-shadow: 0 0 5px rgba(255,255,255,.8);
@@ -48,6 +50,16 @@ body {
     backdrop-filter: blur(10px);
     color: #fff;
 }
+
+/* -----Seccion estrenos----- */
+
+.title-estrenos {
+    font-size: 51px;
+}
+
+
+/* -----Seccion planes----- */
+
 .seccion-planes {
     margin: 7% auto 10%;
     width: 100vw;
@@ -67,11 +79,35 @@ body {
     margin: 2rem auto;
     
 }
-.imangen-card {
-    width: 50%;
-    padding: 1rem 0 1rem 0;
-}
+
 .card-title {
     font-size: 2rem;
+}
+.contenedor-trailer {
+    margin-top: 10%;
+}
+
+
+.listaTemporada {
+    border-radius: 4px;
+}
+.ul-listaSerie a {
+    text-decoration: none;
+    font-size: 1.12em;
+    color: #aaa;
+}
+@media (max-width: 768px) {
+    body {
+        background-image: url(./img/body-img2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    .contenedor {
+        background: none;
+            
+    }
 }
 
